@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.cheguan.lgdpulltorefresh.PullToRefreshView
+            android:id="@+id/find_fragment_pull"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:type="0">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/find_fragment_rv"
+                android:background="@color/bg_grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </com.cheguan.lgdpulltorefresh.PullToRefreshView>
+
+    </LinearLayout>
+    <com.haili.finance.widget.SlidingFrameLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_pop">
+
+
+            <ImageView
+                android:id="@+id/loading_view"
+                android:layout_centerInParent="true"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/circle_white"
+                android:src="@drawable/loading_animlist"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/loading_fail_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_grey"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/loading_fail_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/loading_fail" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="页面加载失败，请稍后重试"
+                    android:layout_centerInParent="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/text_main"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.haili.finance.widget.SlidingFrameLayout>
+</FrameLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.haili.finance.widget.SlidingFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_update_out"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_pop"
+        android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_update_in"
+                android:layout_width="300dp"
+                android:layout_height="360dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/update_bg">
+
+
+                <Button
+                    android:id="@+id/update_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_btn_home_pro"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="60dp"
+                    android:textColor="@color/white"
+                    android:text="立即升级" />
+
+                <TextView
+                    android:id="@+id/update_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="16sp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ProgressBar
+                        android:id="@+id/update_pbar"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="6dp"
+                        android:progressDrawable="@drawable/progress_style"
+                        android:layout_weight="1"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/update_rate"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/text_red"
+                        android:textSize="10sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/update_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="120dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/update_close" />
+
+        </RelativeLayout>
+</com.haili.finance.widget.SlidingFrameLayout>

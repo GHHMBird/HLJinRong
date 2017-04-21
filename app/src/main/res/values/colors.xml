@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ED552A</color>
+    <color name="colorPrimaryDark">#ED552A</color>
+    <color name="colorAccent">#FFC846</color>
+    <color name="mainColor">#ED552A</color>
+    <color name="bg_mainColor">#FFA014</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="line_grey">#DCDCDC</color>
+    <color name="tab_selected_color">#FFA014</color>
+    <color name="tab_normal_color">#B4B4B4</color>
+    <color name="text_main">#666666</color>
+    <color name="bg_main">#F5F5F5</color>
+    <color name="text_product_red_color">#F74C4C</color>
+    <color name="text_main2">#333333</color>
+    <color name="text_grey">#999999</color>
+    <color name="bg_grey">#F5F5F5</color>
+    <color name="text_red">#F74C4C</color>
+    <color name="bg_circle_grey">#979797</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="text_markview">#eb5c05</color>
+    <color name="linechart_org">#F6A623</color>
+    <color name="bg_pop">#99000000</color>
+    <color name="gray">#BDBDBD</color>
+    <color name="theme_window_background">#ffffff</color>
+    <color name="colorAccent_alpha">#99FFC846</color>
+    <color name="calendar_color">#fbb44d</color>
+    <color name="green_text">#7ACD2F</color>
+    <color name="default_shadow_color">#66ed552a</color>
+    <color name="default_fill_color">#ffffff</color>
+    <color name="shadow">#aaED552A</color>
+    <color name="update_text">#64280a</color>
+</resources>

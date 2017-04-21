@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_news"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:gravity="center_vertical"
+    android:clickable="true"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/iv_layout_tip"
+        android:layout_width="16dp"
+        android:layout_height="14dp"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/ic_tip" />
+
+    <com.haili.finance.widget.ScollTextView
+        android:id="@+id/scolltext_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:textSize="12dp"
+        app:delayTime="2000"
+        app:direction="top"
+        app:ellipsize="end"
+        app:gravity="left"
+        app:singleLine="true"
+        app:textColor="@color/text_main" />
+
+    <TextView
+        android:id="@+id/layout_tip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:drawablePadding="5dp"
+        android:drawableRight="@mipmap/arrow_right"
+        android:gravity="right|center_vertical"
+        android:text="@string/more"
+        android:textColor="@color/text_main"
+        android:textSize="12dp" />
+</LinearLayout>

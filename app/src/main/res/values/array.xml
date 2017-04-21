@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="packet_title_array">
+        <item>未使用</item>
+        <item>已使用</item>
+        <item>已过期</item>
+    </string-array>
+
+    <string-array name="manage_title_array">
+        <item>定期理财</item>
+        <item>新客专享</item>
+    </string-array>
+
+    <string-array name="all_trade_title_array">
+        <item>投资记录</item>
+        <item>还款记录</item>
+    </string-array>
+
+    <string-array name="find_title_array">
+        <item>活动</item>
+        <item>新闻</item>
+        <item>公告</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="25dp"/>    //角度
+        
+    <gradient android:startColor="#ee0000"
+        android:endColor="#eeee00"
+        android:angle="0"/>     //0d代表横向，90代表竖向 
+      
+</shape>
